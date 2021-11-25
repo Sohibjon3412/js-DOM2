@@ -18,13 +18,14 @@
   &__inp {
     width: 78%;
     border-radius: 20px;
+    border-color: #6CCBA1;
   }
 
   &__add-btn {
     width: 18%;
     background-color: transparent;
     color: #000;
-    border-color: #ced4da;
+    border-color: #6CCBA1;
     border-radius: 20px;
   }
 
@@ -42,7 +43,7 @@
     width: 20%;
     background-color: transparent;
     color: #000;
-    border-color: #ced4da;
+    border-color: #6CCBA1;
     border-radius: 20px;
   }
 
@@ -50,7 +51,7 @@
     width: 38%;
     background-color: transparent;
     color: #000;
-    border-color: #ced4da;
+    border-color: #6CCBA1;
     border-radius: 20px;
   }
 
@@ -58,7 +59,7 @@
     width: 38%;
     background-color: transparent;
     color: #000;
-    border-color: #ced4da;
+    border-color: #6CCBA1;
     border-radius: 20px;
   }
 }
@@ -68,13 +69,15 @@
   margin: 20px 0;
   display: flex;
   justify-content: space-between;
-  border: none;
+  border-color: #6CCBA1;
+  border-radius: 20px !important;
+  border-top-width: 1px !important;
 }
 .delete {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: transparent;
-  border-color: #ced4da;
+  border-color: #6CCBA1;
   color: #000;
 }

@@ -423,13 +423,14 @@ img {
 .todo__inp {
   width: 78%;
   border-radius: 20px;
+  border-color: #6CCBA1;
 }
 
 .todo__add-btn {
   width: 18%;
   background-color: transparent;
   color: #000;
-  border-color: #ced4da;
+  border-color: #6CCBA1;
   border-radius: 20px;
 }
 
@@ -451,7 +452,7 @@ img {
   width: 20%;
   background-color: transparent;
   color: #000;
-  border-color: #ced4da;
+  border-color: #6CCBA1;
   border-radius: 20px;
 }
 
@@ -459,7 +460,7 @@ img {
   width: 38%;
   background-color: transparent;
   color: #000;
-  border-color: #ced4da;
+  border-color: #6CCBA1;
   border-radius: 20px;
 }
 
@@ -467,7 +468,7 @@ img {
   width: 38%;
   background-color: transparent;
   color: #000;
-  border-color: #ced4da;
+  border-color: #6CCBA1;
   border-radius: 20px;
 }
 
@@ -481,7 +482,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: none;
+  border-color: #6CCBA1;
+  border-radius: 20px !important;
+  border-top-width: 1px !important;
 }
 
 .delete {
@@ -489,7 +492,7 @@ img {
   height: 30px;
   border-radius: 50%;
   background-color: transparent;
-  border-color: #ced4da;
+  border-color: #6CCBA1;
   color: #000;
 }
 
