@@ -5,10 +5,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+  <div class="todo">
+    <div class="todo__container container">
+      <div class="todo__box">
+        <form action="#" id="todo__add" class="todo__add" >
+          <input class="form-control todo__inp" type="text" name="new" id="elTextInp">
+          <input type="submit" class="todo__add-btn btn btn-dark" value="Submit">
+        </form>
+        <ul id="todoAddSec" class="todo__add-sec list-group">
+          <li class="list-group-item">
+            dfdf
+            <button class="delete">X</button>
+          </li>
+        </ul>
+        <div class="todo__buttons">
+          <button id="todo__button" class="todo__button btn btn-primary ">All</button>
+          <button id="todo__complete-button" class="todo__complete-button btn btn-primary">Complete</button>
+          <button id="todo__incom-button" class="todo__incom-button btn btn-primary">Incomplete</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  
+  <script src="js/main.js"></script>
 </body>
 </html>

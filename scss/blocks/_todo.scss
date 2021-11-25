@@ -1,0 +1,80 @@
+.todo {
+  
+
+  &__box {
+    width: 500px;
+    min-height: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: -6px -2px 100px -6px rgba(0, 0, 0, 0.32);
+    border-radius: 20px;
+    padding: 40px;
+  }
+
+  &__add {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__inp {
+    width: 78%;
+    border-radius: 20px;
+  }
+
+  &__add-btn {
+    width: 18%;
+    background-color: transparent;
+    color: #000;
+    border-color: #ced4da;
+    border-radius: 20px;
+  }
+
+  &__add-sec {
+    width: 100%;
+    min-height: 250px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    width: 20%;
+    background-color: transparent;
+    color: #000;
+    border-color: #ced4da;
+    border-radius: 20px;
+  }
+
+  &__complete-button {
+    width: 38%;
+    background-color: transparent;
+    color: #000;
+    border-color: #ced4da;
+    border-radius: 20px;
+  }
+
+  &__incom-button {
+    width: 38%;
+    background-color: transparent;
+    color: #000;
+    border-color: #ced4da;
+    border-radius: 20px;
+  }
+}
+.list-group-item {
+  width: 100%;
+  margin: 10px 0 !important;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+.delete {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border-color: #ced4da;
+  color: #000;
+}
