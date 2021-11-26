@@ -496,6 +496,10 @@ img {
   color: #000;
 }
 
+.active-item {
+  background-color: #6ccba08e;
+}
+
 .container-fluid,
 .container {
   margin-right: auto;

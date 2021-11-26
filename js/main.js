@@ -1,40 +1,27 @@
-let elAddForm = document.getElementById('todo__add');
-let todoAddSec = document.getElementById('todoAddSec');
-let elTextInp = document.getElementById('elTextInp');
-
-// add evenet
-elAddForm.addEventListener('submit', addItem);
-todoAddSec.addEventListener('click', removeItem);
-
-function addItem(e) {
-  e.preventDefault();
-  let newItem = elTextInp.value;
+let input = document.querySelector(".form-control")
+let form = document.querySelector("#todo__add")
+let ul = document.querySelector("#todoAddSec")
+form.onsubmit = (event)=>{
+  if(input.value=="") return 
+  event.preventDefault()
+  let li = document.createElement("li")
+  let x = document.createElement("button")
+  x.className = "delete"
   
-  let li = document.createElement('li');
+  li.className="list-group-item"
   
-  li.className="list-group-item";
+  x.textContent = "X"
+  li.textContent = input.value
+  li.append(x)
+  ul.append(li)
   
-  li.appendChild(document.createTextNode(newItem));
+  li.onclick = (event)=>{
   
-  let deleteBtn = document.createElement('button');
-
-  deleteBtn.className = 'delete';
-
-  deleteBtn.appendChild(document.createTextNode('X'));
-
-  li.appendChild(deleteBtn);
-  
-  todoAddSec.appendChild(li);
-
-  elTextInp.value = '';
-}
-
-// remove item
-function removeItem(e) {
-  if(e.target.classList.contains('delete')) {
-    if(confirm("Rostdan ham o'chirasizmi")) {
-      let li = e.target.parentElement;
-      todoAddSec.removeChild(li); 
-    }
+    event.target.style.backgroundColor ="#6ccba08e"
   }
+  x.onclick = ()=>{
+    ul.removeChild(li)
+  }
+  
+  input.value = null
 }
